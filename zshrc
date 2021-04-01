@@ -13,7 +13,11 @@ alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
 alias conflicts='git diff --name-only --diff-filter=U'
 
-[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+if [ -f /opt/dev/dev.sh ]; then
+  source /opt/dev/dev.sh
+elif [ -f ~/src/github.com/burke/minidev/dev.sh ]; then
+  source ~/src/github.com/burke/minidev/dev.sh
+fi
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="/usr/local/bin:${PATH}"
