@@ -1,5 +1,6 @@
 for FILE in irbrc gitignore gitconfig vimrc tmux.conf
 do
+  rm -rf ~/.$FILE
   ln -s ~/dotfiles/$FILE ~/.$FILE
 done
 
