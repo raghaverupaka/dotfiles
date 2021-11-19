@@ -1,13 +1,18 @@
-for FILE in irbrc gitignore gitconfig vimrc tmux.conf
+for FILE in irbrc gitignore gitconfig tmux.conf # vimrc (temporary)
 do
   rm -rf ~/.$FILE
   ln -s ~/dotfiles/$FILE ~/.$FILE
 done
 
+cat ~/dotfiles/aliases >> ~/.zshrc
+
 tmux source-file ~/.tmux.conf
 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# vim -es -u ~/.vimrc -i NONE -c "PlugInstall" -c "qa"
 
 if [ $SPIN ]; then
   if ! command -v rg &> /dev/null; then
