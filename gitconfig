@@ -14,7 +14,8 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	
-	rebaseplz = !git fetch origin master && git rebase origin/master && :
+	rebasemain = !git fetch origin main && git rebase origin/main && :
+	rebasemaster = !git fetch origin master && git rebase origin/master && :
 
 	# From swalkinshaw
 	fixup = !git commit --fixup=HEAD && git rebase --interactive --autosquash origin/master && :
