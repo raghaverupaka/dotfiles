@@ -4,8 +4,6 @@ do
   ln -s ~/dotfiles/$FILE ~/.$FILE
 done
 
-cat ~/dotfiles/aliases >> ~/.zshrc
-
 tmux source-file ~/.tmux.conf
 
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
@@ -30,6 +28,8 @@ zsh && git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOT
 
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 ln -sf ~/dotfiles/zpreztorc ~/.zpreztorc
+
+cat ~/dotfiles/aliases >> ~/.zshrc
 
 source ~/.zshrc
 
