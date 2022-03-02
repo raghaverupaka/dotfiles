@@ -42,3 +42,5 @@ export PURE_GIT_UNTRACKED_DIRTY=0
 EDITOR="nvim"
 export EDITOR="$EDITOR"
 alias vi="$EDITOR"
+
+echo "Reminder: use 'bt' in pry to print filtered backtrace."
