@@ -1,4 +1,4 @@
-for FILE in irbrc gitignore gitconfig tmux.conf pryrc
+for FILE in irbrc gitignore gitconfig tmux.conf pryrc zhistory
 do
   rm -rf ~/.$FILE
   ln -s ~/dotfiles/$FILE ~/.$FILE
