@@ -31,6 +31,7 @@
 [diff]
   algorithm = patience
   noprefix = true
+  colorMoved = zebra
 [rebase]
 	autoStash = true
 [protocol]
@@ -42,4 +43,6 @@
 [gc]
 	writeCommitGraph = true
 [pull]
-  rebase = false
+  rebase = true
+[fetch]
+  prune = true
