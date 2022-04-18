@@ -44,4 +44,5 @@ export EDITOR="$EDITOR"
 alias vi="$EDITOR"
 
 echo "Reminder: use 'bt' in pry to print filtered backtrace."
-echo "Reminder: 'bin/rails dev:betas:disable BETA=<beta_name> SHOP_ID=1'."
+echo "Reminder: $(cat /etc/spin/secrets/shop-beta-reminder)"
+echo "Reminder: $(cat /etc/spin/secrets/c1-order-session)"
