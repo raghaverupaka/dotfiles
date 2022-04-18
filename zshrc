@@ -46,3 +46,5 @@ alias vi="$EDITOR"
 echo "Reminder: use 'bt' in pry to print filtered backtrace."
 echo "Reminder: $(cat /etc/spin/secrets/shop-beta-reminder)"
 echo "Reminder: $(cat /etc/spin/secrets/c1-order-session)"
+
+export BUILDKITE_TOKEN="$(cat /etc/spin/secrets/buildkite)"
