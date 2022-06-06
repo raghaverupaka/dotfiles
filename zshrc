@@ -48,4 +48,4 @@ echo "Reminder: $(cat /etc/spin/secrets/shop-beta-reminder)"
 echo "Reminder: $(cat /etc/spin/secrets/c1-order-session)"
 
 # To support `dev test <buildkite build id>
-export BUILDKITE_TOKEN="$(cat /etc/spin/secrets/buildkite)"
+# export BUILDKITE_TOKEN="$(cat /etc/spin/secrets/buildkite)"
