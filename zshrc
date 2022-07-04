@@ -44,7 +44,7 @@ export EDITOR="$EDITOR"
 alias vi="$EDITOR"
 
 echo "Reminder: use 'bt' in pry to print filtered backtrace."
-echo "Reminder: $(cat /etc/spin/secrets/shop-beta-reminder)"
+echo "Reminder: use 'enable_beta <beta name>' or 'disable_beta <beta name>' or $(cat /etc/spin/secrets/shop-beta-reminder)"
 echo "Reminder: $(cat /etc/spin/secrets/c1-order-session)"
 
 # To support `dev test <buildkite build id>
