@@ -22,8 +22,8 @@
 	
 	uncommit = reset --soft HEAD^
 [user]
-	name = Christopher Butcher
-	email = christopher.butcher@shopify.com
+	name = Raghav Erupaka
+	email = raghav.erupaka@shopify.com
 [rerere]
 	enabled = true
 [push]
